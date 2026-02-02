@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Miimi ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      margin: 0;
+      color: #4a0e1a;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 400px;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+    button {
+      padding: 12px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    .yes {
+      background-color: #ff4d6d;
+      color: white;
+    }
+    .no {
+      background-color: #ccc;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="content">
+    <h1>Miimi ❤️</h1>
+    <p>
+      From the moment you walked into my thoughts,  
+      everything felt softer, warmer, and more meaningful.  
+      I don’t want a perfect Valentine…  
+      I want **you**.
+    </p>
+    <h1>Will you be my Valentine? 💌</h1>
+    <button class="yes" onclick="yesAnswer()">Yes 💖</button>
+    <button class="no" onclick="noAnswer()">No 🙈</button>
+  </div>
+
+  <script>
+    function noAnswer() {
+      alert("Oops… incorrect answer 😅❤️ Try again.");
+    }
+
+    function yesAnswer() {
+      document.getElementById("content").innerHTML = `
+        <h1>Thank You, Miimi 💕</h1>
+        <p>
+          Thank you for being my <b>first Valentine</b>.  
+          This means more to me than you know.  
+          I promise laughter, care, and moments we’ll smile about for a long time. 💖
+        </p>
+        <p>Happy Valentine’s Day, my Miimi 🌹</p>
+      `;
+    }
+  </script>
+
+</body>
+</html>
